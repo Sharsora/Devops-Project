@@ -11,3 +11,6 @@
    ```sh
    ssh -i "DevOps_Project_Key.pem" ec2-user@public_ip_ec2-instance
    ```
+   ```sh
+   sudo su -
+   ```
