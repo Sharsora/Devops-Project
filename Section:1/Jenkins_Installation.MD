@@ -23,7 +23,7 @@
    amazon-linux-extras install java-openjdk11
    yum install jenkins
    ```
-   ### Start Jenkins
+   Start Jenkins
    ```sh
    # Start jenkins service
    service jenkins start
@@ -31,3 +31,18 @@
    # Setup Jenkins to start at boot,
    chkconfig jenkins on
    ```
+   Accessing Jenkins
+   By default jenkins runs at port `8080`, You can access jenkins at
+   ```sh
+   http://YOUR-SERVER-PUBLIC-IP:8080
+   ```
+  Configure Jenkins
+  - The default Username is `admin`
+  - Grab the default password 
+  - Password Location:`/var/lib/jenkins/secrets/initialAdminPassword`
+  - `Skip` Plugin Installation; _We can do it later_
+  - Change admin password
+    - `Admin` > `Configure` > `Password`
+  - Configure `java` path
+  - `Manage Jenkins` > `Global Tool Configuration` > `JDK`  
+  - Create another admin user id
