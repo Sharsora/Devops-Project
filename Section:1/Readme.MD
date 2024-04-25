@@ -1,3 +1,5 @@
+# Description of project part 1
+
 we are going to build and deploy our application on a Tomcat server.
 For this, we are going to set up a CI CD pipeline with the help of GitHub, Jenkins, Maven, and Tomcat.
 By this time we don't have any environment so we are going to start with setting up your Jenkins server.
