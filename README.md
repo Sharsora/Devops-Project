@@ -1,7 +1,7 @@
 # Devops-Project
 
 
-# Build and Deploy a complete JAVA application
+## Build and Deploy a complete JAVA application
 
 We use 
 
@@ -41,4 +41,5 @@ Then, we are going to deploy it on a Docker container.
 
 At last, we are going to deploy it on Kubernetes.
 
+<img width="635" alt="image" src="https://github.com/Sharsora/Devops-Project/assets/135323873/466b1ff6-d69f-4a6a-a52a-59ad705cf236">
 
