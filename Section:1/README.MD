@@ -10,3 +10,5 @@ Then we are going to create a CI CD Jenkins job and we are going to see how we c
 Once deployment is done we are going to test our deployment.
 By this time we have an environment with Git, GitHub, Jenkins, Maven, and Tomcat.
 We can able to commit our code onto GitHub and Jenkins is going to pull the code from GitHub, build with the help of Maven, and deploy it on your Tomcat server.
+
+<img width="635" alt="image" src="https://github.com/Sharsora/Devops-Project/assets/135323873/466b1ff6-d69f-4a6a-a52a-59ad705cf236">
