@@ -1,6 +1,6 @@
 # Tomcat installation on EC2 instance
  
-### Set up our Jenkins server
+### Set up our Tomcat server
 
 1. Login to the AWS console and create a new EC2 instance
    - Choose Amazon Linux 2 AMI
@@ -14,6 +14,7 @@
    ```sh
    amazon-linux-extras install epel 
    amazon-linux-extras install java-openjdk11  
+   java -version
    ```
 
 ### Install Apache Tomcat
