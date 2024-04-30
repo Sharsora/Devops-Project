@@ -48,5 +48,5 @@ So far we have completed the installation of Maven software to support Maven plu
   - `Manage Jenkins` > `Jenkins Plugins` > `available` > `Maven Integration`
 
 2. Configure maven path
-  - `Manage Jenkins` > `Global Tool Configuration` > `Maven` > `Add Maven` > Remove install automatically and mention Maven Home Path /opt/maven
-  - `Manage Jenkins` > `Global Tool Configuration` > `JDK` > `Add JDK` > Remove install automatically and mention JAVA Home Path /usr/lib/jvm/java-11-openjdk-11.0.12.0.**************
+  - `Manage Jenkins` > `Global Tool Configuration` > `Maven` > `Add Maven` > Remove install automatically and mention Maven Home Path `/opt/maven`
+  - `Manage Jenkins` > `Global Tool Configuration` > `JDK` > `Add JDK` > Remove install automatically and mention JAVA Home Path `/usr/lib/jvm/java-11-openjdk-11.0.12.0.**************`
