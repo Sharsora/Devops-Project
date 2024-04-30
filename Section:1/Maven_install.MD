@@ -29,7 +29,7 @@ Maven is a code build tool used to convert your code to an artifact. this is a w
    ```sh
    echo $PATH
    ```
-   It's not yet updated because we have to re-login to root user or else we can use a command
+   It's not yet updated because we have to re-login to root user or else we can use a command (source command read the .bash_profile again and load the values which are updatd)
    ```sh
    source .bash_profile
    echo $PATH
