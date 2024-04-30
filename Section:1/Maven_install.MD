@@ -23,6 +23,8 @@ Maven is a code build tool used to convert your code to an artifact. this is a w
    JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.12.0.**************
    PATH=<Existing_PATH>:$M2_HOME:$M2:$JAVA_HOME
    ```
+   If you don’t know Java Home path then find using command find / -name jvm you will get output /usr/lib/jvm or else you can find using command find / -name java-11*
+
 #### Checkpoint 
 1. logoff and login to check maven version
   
