@@ -24,11 +24,12 @@ Maven is a code build tool used to convert your code to an artifact. this is a w
    PATH=<Existing_PATH>:$M2_HOME:$M2:$JAVA_HOME
    ```
    If you don’t know Java Home path then find using command find / -name jvm you will get output /usr/lib/jvm or else you can find using command find / -name java-11*
-   to check whether our changes are affected or not
+
+   To check whether our changes are affected or not
    '''sh
    echo $PATH
    '''
-   It's not yet updated because we have to relogin to root user or elase we can use command
+   It's not yet updated because we have to re-login to root user or else we can use a command
    '''sh
    source .bash_profile
    echo $PATH
