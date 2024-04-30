@@ -2,6 +2,23 @@
  
 ### Pre-requisites
 1. EC2 instance with Java 11
+
+### Set up our Jenkins server
+
+1. Login to the AWS console and create a new EC2 instance
+   - Choose Amazon Linux 2 AMI
+   - Select t2.micro instance type
+   - Add tag Tomcat_Server
+   - Create a new security group as Devops_Security_Group
+   - Add new rule custom TCP port 8080
+   - Use the same key pair name as DevOps_Project_Key
+2. Install Java 
+   - run the below commands to install Java on the Tomcat server
+   ```sh
+   amazon-linux-extras install epel 
+   amazon-linux-extras install java-openjdk11  
+   ```
+
 ### Install Apache Tomcat
 1. Download tomcat packages from  https://tomcat.apache.org/download-80.cgi onto /opt on EC2 instance
    > Note: Make sure you change `<version>` with the tomcat version which you download. 
