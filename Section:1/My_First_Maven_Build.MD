@@ -14,6 +14,7 @@
      - Goals and options: `clean install`
 
 Build successfully and it creates a war file webapp.war
+
 It's executed under /var/lib/jenkins/workspace/FirstMavenProject/webapp/target/webapp.war
 under the target directory artifacts get created (webapp.war is an artifact nothing but our build outcome)
 
