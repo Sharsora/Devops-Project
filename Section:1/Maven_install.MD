@@ -26,14 +26,14 @@ Maven is a code build tool used to convert your code to an artifact. this is a w
    If you don’t know Java Home path then find using command find / -name jvm you will get output /usr/lib/jvm or else you can find using command find / -name java-11*
 
    To check whether our changes are affected or not
-   '''sh
+   ```sh
    echo $PATH
-   '''
+   ```
    It's not yet updated because we have to re-login to root user or else we can use a command
-   '''sh
+   ```sh
    source .bash_profile
    echo $PATH
-   '''
+   ```
 
 #### Checkpoint 
 1. logoff and login to check maven version
