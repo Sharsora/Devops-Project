@@ -1,8 +1,5 @@
 # Tomcat installation on EC2 instance
  
-### Pre-requisites
-1. EC2 instance with Java 11
-
 ### Set up our Jenkins server
 
 1. Login to the AWS console and create a new EC2 instance
