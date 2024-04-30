@@ -15,3 +15,5 @@ Git is one of the most popular tools for version control system. you can pull co
 - Configure git path
   - `Manage Jenkins` > `Global Tool Configuration` > `git`
 
+<img width="1200" alt="image" src="https://github.com/Sharsora/Devops-Project/assets/135323873/b3a585fd-b165-4a22-b386-d82adbb836d3">
+
