@@ -1,5 +1,6 @@
 
 # Deploy on a Tomcat server
+<img width="1052" alt="image" src="https://github.com/Sharsora/Devops-Project/assets/135323873/f66b230c-0320-42ea-8224-4f9df3d9419e">
 # *Jenkins Job name:* `Deploy_on_Tomcat_Server`
 
 ### Pre-requisites
