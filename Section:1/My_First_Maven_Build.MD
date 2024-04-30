@@ -11,6 +11,6 @@
       - Branches to build : `*/main`  
    - *Build:*
      - Root POM:`pom.xml`
-     - Goals and options: `clean install package`
+     - Goals and options: `clean install`
 
 
