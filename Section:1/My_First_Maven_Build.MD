@@ -8,7 +8,7 @@
 1. Create *Jenkins job*, Fill the following details,
    - *Source Code Management:*
       - Repository: `https://github.com/Sharsora/hello-world.git`
-      - Branches to build : `*/main`  
+      - Branches to build : `*/main` / `*/master` 
    - *Build:*
      - Root POM:`pom.xml`
      - Goals and options: `clean install`
