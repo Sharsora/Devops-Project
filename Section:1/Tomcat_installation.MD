@@ -62,7 +62,8 @@ Access tomcat application from browser on port 8090
    ```
 1. The above command gives 3 context.xml files. 
 
-  comment out ( `<!-- & -->` ) `Value ClassName` field on files under webapp directory. 
+  comment out ( `<!-- & -->` ) `Value ClassName` field on files under webapp directory. like below
+
   <img width="582" alt="image" src="https://github.com/Sharsora/Devops-Project/assets/135323873/b835c429-5398-425c-8b32-17816761bcaa">
 
   After that restart tomcat services to effect these changes. 
