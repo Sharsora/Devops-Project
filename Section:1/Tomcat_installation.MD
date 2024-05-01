@@ -60,9 +60,11 @@ Access tomcat application from browser on port 8090
    #search for context.xml
    find / -name context.xml
    ```
-1. above command gives 3 context.xml files. comment (<!-- & -->) `Value ClassName` field on files which are under webapp directory. 
-After that restart tomcat services to effect these changes. 
-At the time of writing this lecture below 2 files are updated. 
+1. The above command gives 3 context.xml files. 
+
+  comment (<!-- & -->) `Value ClassName` field on files under webapp directory. 
+  After that restart tomcat services to effect these changes. 
+  At the time of writing this lecture below 2 files are updated. 
    ```sh 
    /opt/tomcat/webapps/host-manager/META-INF/context.xml
    /opt/tomcat/webapps/manager/META-INF/context.xml
