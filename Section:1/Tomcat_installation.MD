@@ -62,7 +62,7 @@ Access tomcat application from browser on port 8090
    ```
 1. The above command gives 3 context.xml files. 
 
-  comment (<!-- & -->) `Value ClassName` field on files under webapp directory. 
+  comment ( `<!-- & -->` ) `Value ClassName` field on files under webapp directory. 
   After that restart tomcat services to effect these changes. 
   At the time of writing this lecture below 2 files are updated. 
    ```sh 
