@@ -37,7 +37,7 @@
 
    - *Build:*
      - Root POM:`pom.xml`
-     - Goals and options: `clean install package`
+     - Goals and options: `clean install`
 
  - *Post-build Actions*
    - Deploy war/ear to container
