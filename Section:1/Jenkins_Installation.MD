@@ -47,8 +47,9 @@
 
 
    for temporary set hostname
-   hostname jenkins-server
-
+   ```sh
+    hostname jenkins-server
+   ```
 
 
   Configure Jenkins
