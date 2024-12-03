@@ -36,6 +36,21 @@
    ```sh
    http://YOUR-SERVER-PUBLIC-IP:8080
    ```
+
+   Change the Hostname of Jenkins-Server
+   ```sh
+   cat /etc/hostname
+   vi /etc/hostname
+   jenkins-server
+   ```
+   then reboot server
+
+
+   for temporary set hostname
+   hostname jenkins-server
+
+
+
   Configure Jenkins
   - The default Username is `admin`
   - Grab the default password 
