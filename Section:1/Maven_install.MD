@@ -59,7 +59,7 @@ drwxr-xr-x 6 root root   99 Dec  4 10:09 ..
 - If I do outside of this directory mvn -v it doesn’t work. that is the reason we need to setup environment variables.
 
 ### To setup environment variable we can ether update .bash_profile of the user which it is going to use or we can update in environments variable's directory
-    - here i would like to make it available only for root user so update in .bash_profile.
+- here i would like to make it available only for root user so update in .bash_profile.
 	
 1. Setup M2_HOME and M2 paths in the .bash_profile of the user and add these to the path variable
    ```sh'
