@@ -3,6 +3,17 @@ Maven is a code build tool used to convert your code to an artifact. this is a w
 
 <img width="317" alt="image" src="https://github.com/Sharsora/Devops-Project/assets/135323873/082b1a3c-158d-4967-8c19-d873032b0975">
 
+### Pre-requisites
+
+1. Setup Maven on Jenkins Server
+  - we can run build server separately (by createing dedicated server and install maven over there) but to reduce complexity we will use Jenkins server as build server as well
+2. Setup Environment Variables
+  - Maven is Java based application that is the reason we need Java, Howvere Java is already installed on Jenkins server
+  - need to setup JAVA_HOME path and M2, M2_HOME (Maven Environment Variables) path 
+3. Install Maven Plugins
+4. Configure Maven and JAVA
+  - Because we haven't told to our Jenkins GUI that that is where JAVA is installed
+
 #### Install Maven on Jenkins
 1. Download maven packages https://maven.apache.org/download.cgi onto the Jenkins server. In this case, I am using /opt/maven as my installation directory
  - Link: https://maven.apache.org/download.cgi
