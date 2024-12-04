@@ -15,9 +15,11 @@
 - taking this code ok so we will just update this one in our index.jsp and save it
 - run 
 ```git status
-- git add.
+- git add. (Added files to staging area)
 - git status 
-- git commit -m "updated index.jsp file"
-- git push origin master```
+- git commit -m "updated index.jsp file" (I am committing these files on to the local repository)
+- git push origin master (Now I am committing these changes on to the remote repository, so we are pushing the code on to remote repository) ```
+
+
 
 
