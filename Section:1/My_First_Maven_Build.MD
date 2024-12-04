@@ -1,5 +1,8 @@
 
 # Create a First Maven Jenkins job to build hello-world project 
+- we have our souce code on Github and we have setup Jenkins
+- we pulled the code from Github to jenkins and build with help of maven and it generated a artifact
+
 # *Jenkins Job name:* `My_First_Maven_Build`
 
 
