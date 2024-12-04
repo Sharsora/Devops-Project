@@ -21,6 +21,8 @@
  
 2. Jenkins should need access to the tomcat server to deploy build artifacts. setup credentials to enable this process. use credentials option on Jenkins home page.
 
+- If one system wants to access to another system, in such cases we need to use manager-script role
+
 - setup credentials
   - `credentials` > `jenkins` > `Global credentials` > `add credentials`
     - Username	: `deployer`
