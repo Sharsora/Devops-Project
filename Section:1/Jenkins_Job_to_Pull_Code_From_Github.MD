@@ -25,5 +25,6 @@ total 8
 -rw-r--r-- 1 jenkins jenkins 6333 Dec  4 09:36 pom.xml
 drwxr-xr-x 2 jenkins jenkins   23 Dec  4 09:36 webapp
 [ec2-user@jenkins-server PullCodeFromGitHub]$ 
+```
 
 - by default Jenkins is going to store all the build related information under /var/lib/jenkins/workspace/
