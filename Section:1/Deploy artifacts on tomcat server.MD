@@ -18,7 +18,14 @@
 - git add. (Added files to staging area)
 - git status 
 - git commit -m "updated index.jsp file" (I am committing these files on to the local repository)
-- git push origin master (Now I am committing these changes on to the remote repository, so we are pushing the code on to remote repository) ```
+- git push origin master (Now I am committing these changes on to the remote repository, so we are pushing the code on to remote repository)```
+
+- I am trying to commit my code on to my github account it is asking for personal access token earlier it used to ask for the password
+- recently github has enabled personal access token authentication that is the reason we must use this one
+- But so far we haven't created any personal access token so we should go and create it now
+- For that let's go back to our github account this is our github account and we should go to or we can just check for how to do that one
+-  We should go to our account then settings under settings we should go to developer settings under that personal access token
+-  Then we need to give some personal access token name once we have given we can choose when it can expire and also we can choose what kind of privileges we should give
 
 
 
