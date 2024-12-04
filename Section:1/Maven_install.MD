@@ -70,7 +70,9 @@ drwxr-xr-x 6 root root   99 Dec  4 10:09 ..
    M2_HOME=/opt/maven/apache-maven-3.6.1
    M2=$M2_HOME/bin
    JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.12.0.**************
-   PATH=<Existing_PATH>:$M2_HOME:$M2:$JAVA_HOME
+   PATH=$PATH:$HOME/bin:$M2_HOME:$M2:$JAVA_HOME
+
+   export PATH
    ```
    If you don’t know Java Home path then find using command find / -name jvm you will get output /usr/lib/jvm or else you can find using command find / -name java-11*
 
