@@ -27,6 +27,8 @@
 - For that let's go back to our github account this is our github account and we should go to or we can just check for how to do that one
 -  We should go to our account then settings under settings we should go to developer settings under that personal access token
 -  Then we need to give some personal access token name once we have given we can choose when it can expire and also we can choose what kind of privileges we should give
+- I am going to give over privileges nothing but I am going to select almost all
+- next generate a token alright we have created a token and it is one time you need to make it secret and it should be along with you if you wish to access it again and again
 
 
 
