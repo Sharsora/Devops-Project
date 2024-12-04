@@ -22,6 +22,7 @@
 2. Jenkins should need access to the tomcat server to deploy build artifacts. setup credentials to enable this process. use credentials option on Jenkins home page.
 
 - If one system wants to access to another system, in such cases we need to use manager-script role
+- we can use when wants to deploy war file into tomcat server
 
 - setup credentials
   - `credentials` > `jenkins` > `Global credentials` > `add credentials`
@@ -46,7 +47,7 @@
 
  - *Post-build Actions*
    - Deploy war/ear to container
-      - WAR/EAR files : `**/*.war`
+      - WAR/EAR files : `**/*.war` (we can use webapp/target/webapp.war)
       - Containers : `Tomcat 8.x`
          - Credentials: `deployer` (user created on above)
          - Tomcat URL : `http://<PUBLIC_IP>:8080`
