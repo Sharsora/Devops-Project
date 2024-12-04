@@ -67,8 +67,8 @@ drwxr-xr-x 6 root root   99 Dec  4 10:09 ..
 1. Setup M2_HOME and M2 paths in the .bash_profile of the user and add these to the path variable
    ```sh'
    vi ~/.bash_profile
-   M2_HOME=/opt/maven/apache-maven-3.6.1
-   M2=$M2_HOME/bin
+   M2_HOME=/opt/maven
+   M2=/opt/maven/bin
    JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.12.0.**************
    PATH=$PATH:$HOME/bin:$M2_HOME:$M2:$JAVA_HOME
 
