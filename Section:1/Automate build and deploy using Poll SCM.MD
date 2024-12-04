@@ -16,6 +16,9 @@
 - in Poll SCM, it will go and validate whether there are changes or not, if there are changes then job will get execute, if there are no changes build wont happen.
 
 Poll SCM
+
 Schedule
-```***```
+```*****```
+- go and check every minutes if there is any change in repository and execute it
+- 
 
