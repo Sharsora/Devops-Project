@@ -25,6 +25,37 @@ Maven is a code build tool used to convert your code to an artifact. this is a w
      wget http://mirrors.estointernet.in/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
      tar -xvzf apache-maven-3.6.1-bin.tar.gz
      ```
+
+##### Question
+Why we need to setup environment variables?
+-  Here in this case, we go to folder where maven is extracted and then go to bin folder in it
+```[root@jenkins-server maven]# ls -la
+total 36
+drwxr-xr-x 6 root root    99 Dec  4 10:09 .
+drwxr-xr-x 3 root root    56 Dec  4 10:10 ..
+drwxr-xr-x 2 root root    97 Dec  4 10:09 bin
+drwxr-xr-x 2 root root    76 Dec  4 10:09 boot
+drwxr-xr-x 3 root root    63 Aug 14 08:48 conf
+drwxr-xr-x 4 root root  4096 Dec  4 10:09 lib
+-rw-r--r-- 1 root root 18920 Aug 14 08:48 LICENSE
+-rw-r--r-- 1 root root  5034 Aug 14 08:48 NOTICE
+-rw-r--r-- 1 root root  1279 Aug 14 08:48 README.txt
+[root@jenkins-server maven]# cd bin/
+[root@jenkins-server bin]# ls -la
+total 32
+drwxr-xr-x 2 root root   97 Dec  4 10:09 .
+drwxr-xr-x 6 root root   99 Dec  4 10:09 ..
+-rw-r--r-- 1 root root  327 Aug 14 08:48 m2.conf
+-rwxr-xr-x 1 root root 5917 Aug 14 08:48 mvn
+-rw-r--r-- 1 root root 6324 Aug 14 08:48 mvn.cmd
+-rwxr-xr-x 1 root root 1684 Aug 14 08:48 mvnDebug
+-rw-r--r-- 1 root root 2169 Aug 14 08:48 mvnDebug.cmd
+-rwxr-xr-x 1 root root 1611 Aug 14 08:48 mvnyjp
+[root@jenkins-server bin]# 
+```
+- here we have actual command of maven. we can excute here
+```./mvn -v
+```
 	
 1. Setup M2_HOME and M2 paths in the .bash_profile of the user and add these to the path variable
    ```sh
