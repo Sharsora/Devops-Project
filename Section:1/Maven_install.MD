@@ -54,8 +54,9 @@ drwxr-xr-x 6 root root   99 Dec  4 10:09 ..
 [root@jenkins-server bin]# 
 ```
 - here we have actual command of maven. we can excute here
-```"./mvn -v "
+```./mvn -v
 ```
+- If I do outside of this directory mvn -v it doesn’t work.
 	
 1. Setup M2_HOME and M2 paths in the .bash_profile of the user and add these to the path variable
    ```sh'
