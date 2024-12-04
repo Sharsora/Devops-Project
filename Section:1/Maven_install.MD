@@ -56,7 +56,9 @@ drwxr-xr-x 6 root root   99 Dec  4 10:09 ..
 - here we have actual command of maven. we can excute here
 ```./mvn -v
 ```
-- If I do outside of this directory mvn -v it doesn’t work.
+- If I do outside of this directory mvn -v it doesn’t work. that is the reason we need to setup environment variables.
+
+
 	
 1. Setup M2_HOME and M2 paths in the .bash_profile of the user and add these to the path variable
    ```sh'
