@@ -1,3 +1,4 @@
+
 - Whenever I do some changes to my source code, immediately my build should trigger
 - whenever there is some change in github, it should automatically identify and execute the build job and deploy the code
 - select existing job, Build and Deploy job, select the configure
@@ -14,4 +15,7 @@
 - in periodically, irrespective of code change build will get execute
 - in Poll SCM, it will go and validate whether there are changes or not, if there are changes then job will get execute, if there are no changes build wont happen.
 
+Poll SCM
+Schedule
+```***```
 
