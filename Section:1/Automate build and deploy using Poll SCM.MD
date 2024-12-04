@@ -18,7 +18,7 @@
 Poll SCM
 
 Schedule
-```*****```
+```* * * * *```
 - go and check every minutes if there is any change in repository and execute it
 - 
 
