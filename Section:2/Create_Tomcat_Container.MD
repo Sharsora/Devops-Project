@@ -67,4 +67,4 @@ docker exec -it tomcat-container /bin/bash
 ```sh
 cp -R * ../webapps                   (R for recursive, * means whatever in the current directory, ../ means one step uowords webapps folder)
 ```
-
+- Now we can access tomcat webpage
