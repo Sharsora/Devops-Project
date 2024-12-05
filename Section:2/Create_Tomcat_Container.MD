@@ -37,3 +37,11 @@ docker images
 ```sh 
 docker run
 ```
+- minus d stands for detached mode, -name for name of the container, -p for port number by default tomcat runs onport number 8080
+- Container runs inside a docker host right. So it will be accessible only inside the docker host. If we want to access it outside of the docker host then we need to map it to the external port. So the external port I can use 8080 itself or else 8081 to avoid the confusion. (What does it mean that internally tomcat is running on port number 8080 but externally
+I am exposing it to external network on port number 8081)
+
+```sh
+docker run -d --name tomcat-container -p 8081:8080 tomcat
+```
+
