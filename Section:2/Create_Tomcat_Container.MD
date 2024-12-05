@@ -68,3 +68,10 @@ docker exec -it tomcat-container /bin/bash
 cp -R * ../webapps                   (R for recursive, * means whatever in the current directory, ../ means one step uowords webapps folder)
 ```
 - Now we can access tomcat webpage
+
+- If we create new container this error again will come.
+- because whatever changes we have made that is within the container, whenever we create new container with the image changes we have made on container it wont effected on the docker image. that is the reason when we create new container from the image it will give same error.
+- How to solve this?
+- using docker file. we will pull the tomcat image and we will do the customisation like coping file from webapp.dist to webapp, so that content will be accessible 
+
+
