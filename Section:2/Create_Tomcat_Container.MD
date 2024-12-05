@@ -51,3 +51,20 @@ docker ps-a
 - let's go and try to access it to access this container outside of the network. 
 - we need to open 8081 as well
 -  I could able to access it from the browser but my request is not reaching properly that is the reason we are getting HTTPS status 404 error which represents that it could not able to find the page which we are requesting however we have successfully reached to our Tomcat server that is the reason it is showing Tomcat this is a known issue
+
+#### to solve error
+- login to docker container with help of /bin/bash
+
+```sh
+docker exec -it tomcat-container /bin/bash
+```
+- you will go inside /usr/local/tomcat directory into docker container
+- whenever we try to access tomcat from the browser, it will lookinto application in the webapps directory, but if you go inside webapps directory you don’t see any content.
+- they are keeping information into webapp.dist. go inside of this
+- we check here by ls -la we can see all the default apps ROOT docs example host-manager manager
+- these content we need to copy into webapps directory, then only we can access our applications 
+
+```sh
+cp -R * ../webapps                   (R for recursive, * means whatever in the current directory, ../ means one step uowords webapps folder)
+```
+
