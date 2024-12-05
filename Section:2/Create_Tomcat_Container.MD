@@ -25,9 +25,15 @@ docker pull
 ```sh
 docker pull tomcat
 ```
+- Whenever we execute this command it is going to pull the image onto our local system.
+- there are different layers on our images because a image is created with multiple layers based on how many times we are updating it 
 
-- I can create a container out of that by using command
+- check my images
+```sh
+docker images
+```
 
+- We need to create a container out of it to create a container we should run
 ```sh 
 docker run
 ```
