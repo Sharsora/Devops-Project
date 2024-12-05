@@ -44,4 +44,7 @@ I am exposing it to external network on port number 8081)
 ```sh
 docker run -d --name tomcat-container -p 8081:8080 tomcat
 ```
-
+- to see what all docker containers are there
+```sh
+docker ps-a
+```
