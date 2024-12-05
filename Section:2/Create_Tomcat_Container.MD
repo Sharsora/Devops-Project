@@ -48,3 +48,6 @@ docker run -d --name tomcat-container -p 8081:8080 tomcat
 ```sh
 docker ps-a
 ```
+- let's go and try to access it to access this container outside of the network. 
+- we need to open 8081 as well
+-  I could able to access it from the browser but my request is not reaching properly that is the reason we are getting HTTPS status 404 error which represents that it could not able to find the page which we are requesting however we have successfully reached to our Tomcat server that is the reason it is showing Tomcat this is a known issue
