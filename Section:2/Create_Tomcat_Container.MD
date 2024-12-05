@@ -16,6 +16,10 @@
 - search for tomcat
 - I need to pull this image onto my local system then I can create a container out of it.
 - to pull this one onto my local system I can use command
-```docker pull ```
+```sh
+docker pull 
+```
 - I can create a container out of that by using command
-```docker run```
+```sh 
+docker run
+```
