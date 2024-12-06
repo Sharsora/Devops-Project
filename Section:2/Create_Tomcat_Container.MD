@@ -6,7 +6,7 @@
 1. From the docker hub
  - docker hub is a public repository which contains the docker images.We can use a command ```docker pull ``` to take the image onto our local system.
 2. Creating our own docker file.
- - we are going to pull the basic image from the docker hub itself and top of that one we can do our own customization with the help of docker file.
+ - we are going to pull the basic image from the docker hub itself and on top of that one we can do our own customization with the help of docker file.
  - Docker file contains instructions what your docker container should get.To create a docker image out of docker file we are going to use ```docker build``` command.
 
 ### To pull the docker image from the docker hub
@@ -28,12 +28,12 @@ docker pull tomcat
 - Whenever we execute this command it is going to pull the image onto our local system.
 - there are different layers on our images because a image is created with multiple layers based on how many times we are updating it 
 
-- check my images
+- To check my images in local system
 ```sh
 docker images
 ```
 
-- We need to create a container out of it to create a container we should run
+- We need to create a container out of it. To create a container we should run
 ```sh 
 docker run
 ```
