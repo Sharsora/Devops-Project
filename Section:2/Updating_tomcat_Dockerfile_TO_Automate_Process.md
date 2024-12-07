@@ -12,3 +12,13 @@
 [root@dockerhost ~]# mv Dockerfile /opt/docker/
 [root@dockerhost ~]# 
 ```
+```sh
+[root@dockerhost ~]# chown -R dockeradmin:dockeradmin /opt/docker/
+[root@dockerhost ~]# cd /opt/docker/
+[root@dockerhost docker]# ls -la
+total 4
+drwxr-xr-x 2 dockeradmin dockeradmin 24 Dec  7 15:24 .
+drwxr-xr-x 6 root        root        59 Dec  7 15:16 ..
+-rw-r--r-- 1 dockeradmin dockeradmin 89 Dec  7 07:12 Dockerfile
+[root@dockerhost docker]#
+```
