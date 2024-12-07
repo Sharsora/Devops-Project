@@ -53,3 +53,17 @@ you mention in the CMD that will be get executed.
 
 - `SHELL` - The SHELL instruction allows the default shell used for the shell form of commands to be overridden. 
 
+
+### Installing  Tomcat on CentOS
+
+- pull the CentOS from the Docker Hub.
+- to run your Tomcat, we should install Java.
+- we are going to create a directory that is /opt/omcat directory.
+- we need to change work directory to /opt/tomcat.
+- download Tomcat packages. Just go to browser and type for Tomcat download, you will get the official page where we can download it.
+- extract it, I mean to say tar.gz file you are going to get, we need to extract it.
+- rename the Tomcat directory.
+Usually, you will get your directory name as a Tomcat with version.
+Instead of that one, we will just rename it to the Tomcat directory.
+- we should tell to Docker that it is running on port number 8080, that is the default port number, right?
+- Once that is done, we need to start the Tomcat services.
