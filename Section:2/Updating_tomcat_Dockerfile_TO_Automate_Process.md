@@ -26,3 +26,16 @@ drwxr-xr-x 6 root        root        59 Dec  7 15:16 ..
 - for that in the Jenkins Job BuildtoDeploy on Container - change the configuration -
 - *Post-build Actions*
      - Remote directory: `//opt//docker` (using // otherwise it will copy in to dockeradmin's home directory itself)
+
+- Now we need to create container along with .war file (artifact). then only we can access our application from web browse. For that we need to change Dockerfile
+```sh
+vi Dockerfile
+
+FROM tomcat:latest
+RUN cp -R /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
+COPY ./*.war /usr/local/tomcat/webapps
+```
+- now build docker container
+```sh
+docker build -t tomcat:v1 .
+```
