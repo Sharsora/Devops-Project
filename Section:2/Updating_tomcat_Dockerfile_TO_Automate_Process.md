@@ -22,3 +22,7 @@ drwxr-xr-x 6 root        root        59 Dec  7 15:16 ..
 -rw-r--r-- 1 dockeradmin dockeradmin 89 Dec  7 07:12 Dockerfile
 [root@dockerhost docker]#
 ```
+- Now we will ask jenkins to copy artifacts in the new created path /opt/docker
+- for that in the Jenkins Job BuildtoDeploy on Container - change the configuration -
+- *Post-build Actions*
+     - Remote directory: `//opt//docker` (using // otherwise it will copy in to dockeradmin's home directory itself)
