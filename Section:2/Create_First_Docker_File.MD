@@ -79,3 +79,19 @@ Instead of that one, we will just rename it to the Tomcat directory.
 | RUN | rename it to the Tomcat directory |
 | EXPOSE | tell to Docker that it is running on port number 8080 |
 | CMD | start tomcat service. using CMD because these services runs at the Docker execution time. If we specify the run command, it won't get executed or it won't get started. |
+
+
+```sh
+vi Dockerfile
+
+FROM centos:latest
+RUN yum install java -y
+RUN mkdir /opt/tomcat
+WORKDIR /opt/tomcat
+ADD https://downloads.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.97.tar.gz.asc .
+RUN tar -xvzf apache-tomcat-9.0.97.tar.gz.asc
+RUN mv apache-tomcat-9.0.97/* /opt/tomcat
+EXPOSE 8080
+CMD ["/opt/tomcat/bin/catalina.sh","run"]
+```
+
