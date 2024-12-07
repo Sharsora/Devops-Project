@@ -58,7 +58,7 @@ you mention in the CMD that will be get executed.
 
 - pull the CentOS from the Docker Hub.
 - to run your Tomcat, we should install Java.
-- we are going to create a directory that is /opt/omcat directory.
+- we are going to create a directory that is /opt/tomcat directory.
 - we need to change work directory to /opt/tomcat.
 - download Tomcat packages. Just go to browser and type for Tomcat download, you will get the official page where we can download it.
 - extract it, I mean to say tar.gz file you are going to get, we need to extract it.
@@ -72,3 +72,10 @@ Instead of that one, we will just rename it to the Tomcat directory.
 | --- | --- |
 | FROM | pull the CentOS from the Docker Hub |
 | RUN | install Java |
+| RUN | create a directory that is /opt/tomcat directory|
+| WORKDIR | change work directory to /opt/tomcat |
+| ADD/RUN | download Tomcat packages. if you wish to use wget command then use RUN command |
+| RUN | Extract tar.gz |
+| RUN | rename it to the Tomcat directory |
+| EXPOSE | tell to Docker that it is running on port number 8080 |
+| CMD | start tomcat service. using CMD because these services runs at the Docker execution time. If we specify the run command, it won't get executed or it won't get started. |
