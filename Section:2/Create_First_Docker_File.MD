@@ -2,11 +2,13 @@
 - A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image.
 
 
-- `FROM` - A valid Dockerfile must start with a FROM instruction.
+- `FROM` - A valid Dockerfile must start with a FROM instruction. ( To pull the base image )
 
-- `RUN` - The RUN instruction will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the Dockerfile.
+- `RUN` - The RUN instruction will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the Dockerfile. If you have some shell command, like installing packages, creating users, or anything I can
+say, almost all the shell commands we can execute with the run command on Docker file. ( To Execute Commands) 
 
-- `CMD` - The main purpose of a CMD is to provide defaults for an executing container. 
+- `CMD` - The main purpose of a CMD is to provide defaults for an executing container. The CMD instruction will execute at the time of Docker execution, whatever instructions
+you mention in the CMD that will be get executed.
 
    `Note:` There can only be one CMD instruction in a Dockerfile. If you list more than one CMD then only the last CMD will take effect.
 
