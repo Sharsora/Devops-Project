@@ -46,7 +46,7 @@
      - Goals and options: `clean install`
 
  - *Post-build Actions*
-   - Deploy war/ear to container
+   - Deploy war/ear to container    (this will only show if you have installed deploy to container plugin )
       - WAR/EAR files : `**/*.war` (we can use webapp/target/webapp.war)
       - Containers : `Tomcat 8.x`
          - Credentials: `deployer` (user created on above)
