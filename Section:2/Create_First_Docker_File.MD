@@ -74,7 +74,7 @@ Instead of that one, we will just rename it to the Tomcat directory.
 | RUN | install Java |
 | RUN | create a directory that is /opt/tomcat directory|
 | WORKDIR | change work directory to /opt/tomcat |
-| ADD/RUN | download Tomcat packages. if you wish to use wget command then use RUN command |
+| ADD / RUN | download Tomcat packages. if you wish to use wget command then use RUN command |
 | RUN | Extract tar.gz |
 | RUN | rename it to the Tomcat directory |
 | EXPOSE | tell to Docker that it is running on port number 8080 |
