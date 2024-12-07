@@ -53,3 +53,25 @@ PasswordAuthentication yes
 ```sh
 service sshd reload
 ```
+
+### Integration between Docker-host and Jenkins
+
+Install "publish Over SSH"
+ - `Manage Jenkins` > `Manage Plugins` > `Available` > `Publish over SSH`
+
+Enable connection between Docker-host and Jenkins
+
+- `Manage Jenkins` > `Configure System` > `Publish Over SSH` > `SSH Servers` 
+
+	- SSH Servers:
+                - Name: `docker-host`
+		- Hostname:`<ServerIP>`
+		- username: `dockeradmin`
+               
+       -  `Advanced` > chose `Use password authentication, or use a different key`
+		 - password: `*******`
+
+   - if you want to go with key based authentication then generat it 
+   - login as dockeradmin
+   - ssh-keygen
+   - key will generate at path /home/dockeradmin/.ssh, you will have id.rsa & id.rsa.pub
