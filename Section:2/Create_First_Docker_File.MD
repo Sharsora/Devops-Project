@@ -23,13 +23,12 @@ you mention in the CMD that will be get executed.
 
 - `ENV` - The ENV instruction sets the environment variable <key> to the value <value>.
 
-- `ADD` - The ADD instruction copies new files, directories or remote file URLs from <src> and adds them to the filesystem of the image at the path <dest>. This command also going to helpful to copy a file from local system to Docker container. We can also use this one as a wget command. I mean to say with wget command, we can download packages onto our system, right?
-Similar way, if we wish to download something from the browser, we can use the add command.
+- `ADD` - This command also going to helpful to copy a file from local system to Docker container. We can also use this one as a wget command. I mean to say with wget command, we can download packages onto our system, right? Similar way, if we wish to download something from the browser, we can use the add command. The ADD instruction copies new files, directories or remote file URLs from <src> and adds them to the filesystem of the image at the path <dest>. 
 
 
     If <src> is a local tar archive in a recognized compression format (identity, gzip, bzip2 or xz) then it is unpacked as a directory. 
 
-- `COPY` - The COPY instruction copies new files or directories from <src> and adds them to the filesystem of the container at the path <dest>. This command helps you to copy a directory from your local or Docker host to Docker container.
+- `COPY` - This command helps you to copy a directory from your local or Docker host to Docker container. The COPY instruction copies new files or directories from <src> and adds them to the filesystem of the container at the path <dest>.
 
 - `ENTRYPOINT` - An ENTRYPOINT allows you to configure a container that will run as an executable.
 
