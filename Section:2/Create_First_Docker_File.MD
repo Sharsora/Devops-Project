@@ -84,12 +84,15 @@ Instead of that one, we will just rename it to the Tomcat directory.
 ```sh
 vi Dockerfile
 
-FROM centos:latest
-RUN yum install java -y
+FROM centos:centos7
+RUN sed -i s/mirror.centos.org/vault.centos.org/g /etc/yum.repos.d/CentOS-*.repo
+RUN sed -i s/^#.*baseurl=http/baseurl=http/g /etc/yum.repos.d/CentOS-*.repo
+RUN sed -i s/^mirrorlist=http/#mirrorlist=http/g /etc/yum.repos.d/CentOS-*.repo
+RUN yum install -y java
 RUN mkdir /opt/tomcat
 WORKDIR /opt/tomcat
-ADD https://downloads.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.97.tar.gz.asc .
-RUN tar -xvzf apache-tomcat-9.0.97.tar.gz.asc
+ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.97/bin/apache-tomcat-9.0.97.tar.gz .
+RUN tar -xvzf apache-tomcat-9.0.97.tar.gz
 RUN mv apache-tomcat-9.0.97/* /opt/tomcat
 EXPOSE 8080
 CMD ["/opt/tomcat/bin/catalina.sh","run"]
