@@ -81,6 +81,8 @@ Instead of that one, we will just rename it to the Tomcat directory.
 | CMD | start tomcat service. using CMD because these services runs at the Docker execution time. If we specify the run command, it won't get executed or it won't get started. |
 
 
+## creating Dockerfile 
+
 ```sh
 vi Dockerfile
 
@@ -96,5 +98,26 @@ RUN tar -xvzf apache-tomcat-9.0.97.tar.gz
 RUN mv apache-tomcat-9.0.97/* /opt/tomcat
 EXPOSE 8080
 CMD ["/opt/tomcat/bin/catalina.sh","run"]
+```
+
+```sh
+[root@dockerhost ~]# docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+mytomcat     latest    028da7957538   41 seconds ago   707MB
+[root@dockerhost ~]# 
+```
+
+### creating comtainer out of image
+```sh
+[root@dockerhost ~]# docker run -d --name mytomcat-server -p 8083:8080 mytomcat
+0c5e8f139a3c3e6788a9d253cc3c564afe4b583c107b149410ea3863c8431dd5
+[root@dockerhost ~]# 
+```
+
+### checking docker containg is running or not
+```sh
+[root@dockerhost ~]# docker ps -a
+CONTAINER ID   IMAGE      COMMAND                  CREATED          STATUS                        PORTS                                       NAMES
+0c5e8f139a3c   mytomcat   "/opt/tomcat/bin/cat…"   7 seconds ago    Up 7 seconds                  0.0.0.0:8083->8080/tcp, :::8083->8080/tcp   mytomcat-server
 ```
 
