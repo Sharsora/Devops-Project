@@ -1,1 +1,12 @@
+- we have executed BuildandDeployonContainer job, with the help of this job we could build and copy the artifacts on to dockerhost. From there to create container we have executed commands like docker build and docker run manully.we want to automate end to end pipeline
+- once we commit our code onto Github it should able to build it and create artifacts and copy artifacts on docker host, creating docker image and create docker container
+- for that updating existing job BuildandDeployContainer - go to configure - in the Post Build Action - send build artifacts over SSH
+- here we can execute some of commands
 
+- once the artifacts get copid, jenkins job itself going to create image and creating a container. For that add Docker command in Post Build Action - send build artifacts over SSH - Exec commands
+
+```sh
+cd /opt/docker;
+docker build -t regapp:v1 .;  (do not forgot add . otherwise it will fail)
+docker run -d --name registerapp -p 8086:8080 regapp:v1
+```
