@@ -35,7 +35,21 @@ FROM tomcat:latest
 RUN cp -R /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
 COPY ./*.war /usr/local/tomcat/webapps
 ```
-- now build docker container
+- now create image out of it
+
 ```sh
-docker build -t tomcat:v1 .
+docker build -t tomcat:v1 .  (. represent that in current location we have Dockerfile and build that one also we have .war file at that location so install that also)
 ```
+```sh
+[root@dockerhost docker]# docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+tomcat       v1        1cdfd941c8c7   21 seconds ago   472MB
+```
+
+- now container out of it
+
+```sh
+docker run -d --name tomcatv1 -p 8085:8080 tomcat:v1
+```
+
+- After copying artifacts, i am building docker container manually this is not right choice, we need to tell to jenkins job that once the artifacts get copied you need to create container as well.
