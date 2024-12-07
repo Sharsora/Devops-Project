@@ -6,6 +6,9 @@
 - i dont require prefix webapp/target so i will mentioned that in Remove prefix
 - remote directory /home/dockeradmin if not specify it will take by default that only. (no need to specify)
 
+- Now this webapp.war file (artifacts) we would like to copy into docker container. we can copy manually, but if there so many builds then how do you make sure that your application successfully deployed everytime.
+- That is the reason we need to update our docker file to take this webapp.war file to creating a new container. means deploy our application along with tomcat container.
+
 ### Steps to create "Deploy_on_Docker_Host" Jenkin job
  #### From Jenkins home page select "New Item"
    - Enter an item name: `Deploy_on_Docker_Host`
