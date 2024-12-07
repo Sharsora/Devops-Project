@@ -10,9 +10,9 @@ say, almost all the shell commands we can execute with the run command on Docker
 - `CMD` - The main purpose of a CMD is to provide defaults for an executing container. The CMD instruction will execute at the time of Docker execution, whatever instructions
 you mention in the CMD that will be get executed.
 
-   `Note:` There can only be one CMD instruction in a Dockerfile. If you list more than one CMD then only the last CMD will take effect.
+   1. There can only be one CMD instruction in a Dockerfile. If you list more than one CMD then only the last CMD will take effect.
 
-   `Note` - Do not confuse RUN with CMD. RUN actually runs a command and commits the result; CMD does not execute anything at build time, but specifies the intended command for the image.
+   2. Do not confuse RUN with CMD. RUN actually runs a command and commits the result; CMD does not execute anything at build time, but specifies the intended command for the image.
 
 - `LABEL` -The LABEL instruction adds metadata to an image. A LABEL is a key-value pair. T
 
