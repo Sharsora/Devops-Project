@@ -67,3 +67,8 @@ Usually, you will get your directory name as a Tomcat with version.
 Instead of that one, we will just rename it to the Tomcat directory.
 - we should tell to Docker that it is running on port number 8080, that is the default port number, right?
 - Once that is done, we need to start the Tomcat services.
+
+| Command | Description |
+| --- | --- |
+| FROM | pull the CentOS from the Docker Hub |
+| RUN | install Java |
